@@ -32,7 +32,7 @@ try:
     ActionChains(driver).click(login_button).perform()
 
     # Here it is necessary to create the management of two-factor authentication
-    # input('Press enter after you have passed two-factor authentication and stored the browser')
+    input('Press enter after you have passed two-factor authentication and stored the browser')
 
     # Wait for the textarea to be present to avoid the 'element not found' exception
     WebDriverWait(driver, 30).until(ec.presence_of_element_located((By.NAME, 'xc_message')))
